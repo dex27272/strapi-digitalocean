@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/indications",
+      "handler": "indications.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/indications",
+      "handler": "indications.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/indications",
+      "handler": "indications.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

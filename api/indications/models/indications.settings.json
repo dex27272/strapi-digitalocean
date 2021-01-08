@@ -1,0 +1,36 @@
+{
+  "kind": "singleType",
+  "collectionName": "indications",
+  "info": {
+    "name": "Indications",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "indications_body": {
+      "type": "richtext"
+    },
+    "slug": {
+      "type": "uid"
+    },
+    "button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "button.button"
+    },
+    "indications_body_2": {
+      "type": "richtext"
+    },
+    "indications_body_list": {
+      "type": "richtext"
+    }
+  }
+}
