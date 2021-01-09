@@ -1,0 +1,30 @@
+{
+  "kind": "singleType",
+  "collectionName": "prices",
+  "info": {
+    "name": "price"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "body_price": {
+      "type": "richtext"
+    },
+    "slug": {
+      "type": "uid"
+    },
+    "button_price": {
+      "type": "dynamiczone",
+      "components": [
+        "button.button"
+      ]
+    }
+  }
+}

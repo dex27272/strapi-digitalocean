@@ -1,0 +1,50 @@
+{
+  "kind": "singleType",
+  "collectionName": "about_mes",
+  "info": {
+    "name": "about me",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "cover": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Subtitle": {
+      "type": "string"
+    },
+    "Body": {
+      "type": "richtext",
+      "required": true
+    },
+    "infobox": {
+      "type": "richtext",
+      "required": false
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "Title"
+    },
+    "button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "button.button"
+    }
+  }
+}

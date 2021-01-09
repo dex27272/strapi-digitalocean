@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "heroes",
+  "info": {
+    "name": "hero",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "button": {
+      "type": "component",
+      "repeatable": true,
+      "component": "button.button",
+      "required": true
+    }
+  }
+}

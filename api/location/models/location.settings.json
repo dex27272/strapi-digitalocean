@@ -1,0 +1,30 @@
+{
+  "kind": "singleType",
+  "collectionName": "locations",
+  "info": {
+    "name": "location",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "location_body": {
+      "type": "richtext"
+    },
+    "button": {
+      "type": "component",
+      "repeatable": true,
+      "component": "button.button"
+    },
+    "slug": {
+      "type": "uid"
+    }
+  }
+}
