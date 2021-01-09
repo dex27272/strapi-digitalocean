@@ -70,8 +70,7 @@ $RECYCLE.BIN/
 *.sql
 *.sqlite
 *.sqlite3
-database.js
-server.js
+
 
 ############################
 # Misc.
@@ -95,7 +94,7 @@ logs
 results
 node_modules
 .node_history
-config
+
 ############################
 # Tests
 ############################
